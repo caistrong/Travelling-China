@@ -77,6 +77,9 @@ function drawCircle(point) {
   ctx.arc(point.x, point.y, 3, 0, Math.PI*2, true);
   ctx.closePath();
   ctx.fill();
+  //标出城市名
+  ctx.font = "bold 12px Arial";
+  ctx.fillText(point.cityname,point.x,point.y);
 }
 
 //画连线
